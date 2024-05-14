@@ -1,0 +1,21 @@
+$ npm init -y => comando para iniciar um pacote com sim para tudo o que perguntar
+
+package.json criado
+
+o script gerado com o bundler será gerado na raiz.
+<script src="./main.js"></script>
+
+próximo passo instalar esbuild
+nstalar o ESBuild
+
+npm install esbuild
+Adicionar os scripts de desenvolvimento e build ao package.json
+
+substituir os scripts default por estes
+
+"scripts": {
+  "start": "esbuild --bundle src/main.jsx --outfile=main.js --servedir=./ --watch",
+  "build": "esbuild --bundle src/main.jsx --outfile=main.js"
+},
+
+substituir os scripts default por estes
